@@ -1,0 +1,18 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles4.css" type="text/css">
+</head>
+	
+</html>
+<body>
+	<img class="wolk" src="wolk1.jpg"align="right" name="wolk">
+	<img class="KOT" src="KOT.jpg" align="left" name="KOT">
+	<h1 language="JavaScript" onClick="handler()" align="center"> обмен </h1>
+	<script>
+		var imgs=new Array('wolk1.jpg','KOT.jpg');
+		function handler()
+		{
+			wolk(align="center") 
+		}
+	</script>
+</body>
