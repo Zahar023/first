@@ -1,0 +1,3 @@
+﻿  SAOD.cpp
+C:\Users\zahar\source\repos\SAOD\SAOD.cpp(476,1): warning C4715: List::Record: значение возвращается не при всех путях выполнения
+  SAOD.vcxproj -> C:\Users\zahar\source\repos\SAOD\x64\Debug\SAOD.exe
