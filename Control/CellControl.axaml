@@ -1,0 +1,17 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:PalitraMVVM.Control"
+		x:DataType="controls:CellControl">
+  <Design.PreviewWith>
+    <controls:CellControl />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|CellControl">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+      <ControlTemplate>
+        <TextBlock Height="30" Width="30" Background="{TemplateBinding NewColor}"/>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>

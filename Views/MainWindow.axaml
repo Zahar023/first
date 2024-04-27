@@ -1,0 +1,34 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:PalitraMVVM.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PalitraMVVM.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+		xmlns:control="clr-namespace:PalitraMVVM.Control"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="PalitraMVVM">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	<Grid>
+		<TextBlock Background="" Text="{Binding Canv}" 
+				   HorizontalAlignment="Center"/>
+		<TextBlock Background="Green" Text="Color" 
+				   HorizontalAlignment="Center" Height="20" Margin="10"/>
+
+		<StackPanel Width="500" Height="500">
+		
+			<TextBlock x:Name="results" Text="{Binding Results}" Margin="5"></TextBlock>
+			<StackPanel Margin="20" Background="AliceBlue"
+				   PointerPressed="PointerPressedHandler" Width="390" Height="270">
+				<Image Name="IMG" Source="{Binding Bitm}"/>
+			</StackPanel>
+			<control:CellControl NewColor="{Binding Color}"/>
+			<TextBlock Name="NewColor" Background="{Binding Color}">Color</TextBlock>
+		</StackPanel>
+
+	</Grid> 
+</Window>
