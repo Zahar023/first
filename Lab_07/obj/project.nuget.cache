@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Tc78AnlvmDMNHBelP/HBorBFRr0s+XzHyoWCwO/KcUi6VN7LWpvcS0oNrD6wvxxjkAdQDAL1Mlg2Yoi043uvJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zahar\\source\\repos\\Lab_07\\Lab_07.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zahar\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512",
+    "C:\\Users\\zahar\\.nuget\\packages\\system.reactive.linq\\6.0.0\\system.reactive.linq.6.0.0.nupkg.sha512",
+    "C:\\Users\\zahar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

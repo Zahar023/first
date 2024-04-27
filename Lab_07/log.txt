@@ -1,0 +1,8 @@
+AddUser: 1, Name: Alex, Age 20
+AddUser: 1, Name: Bilbo, Age 24
+AddUser: 1, Name: Petr, Age 40
+RemoveUser: 1, Name: Bilbo, Age 24
+AddUser: 1, Name: Alex, Age 20
+AddUser: 1, Name: Bilbo, Age 24
+AddUser: 1, Name: Petr, Age 40
+RemoveUser: 1, Name: Bilbo, Age 24
