@@ -1,0 +1,20 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MVVM_Lab_8.App"
+             xmlns:local="using:MVVM_Lab_8"
+			 xmlns:views="clr-namespace:MVVM_Lab_8.Views"
+			 xmlns:viewmodels="clr-namespace:MVVM_Lab_8.ViewModels">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+	<Application.Resources>
+        <DataTemplate DataType="{x:Type views:FlatOutputView}"/>
+	</Application.Resources>
+	
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+</Application>
