@@ -1,0 +1,14 @@
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.csproj.AssemblyReference.cache
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MainWindow.g.cs
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\App.g.cs
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame_MarkupCompile.cache
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MainWindow.baml
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.g.resources
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.Properties.Resources.resources
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.csproj.GenerateResource.cache
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.csproj.CoreCompileInputs.cache
+C:\Users\zahar\source\repos\MatchGame\bin\Debug\MatchGame.exe.config
+C:\Users\zahar\source\repos\MatchGame\bin\Debug\MatchGame.exe
+C:\Users\zahar\source\repos\MatchGame\bin\Debug\MatchGame.pdb
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.exe
+C:\Users\zahar\source\repos\MatchGame\obj\Debug\MatchGame.pdb
