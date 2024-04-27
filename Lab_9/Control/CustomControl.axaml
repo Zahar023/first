@@ -1,0 +1,48 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+		xmlns:ia="clr-namespace:Avalonia.Xaml.Interactions.Core;assembly=Avalonia.Xaml.Interactions"
+		xmlns:controls="using:MVVMLab9.Control"
+		x:DataType="controls:CustomControl">
+	
+  <Design.PreviewWith>
+    <controls:CustomControl />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|CustomControl">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+		<ControlTemplate>
+			<Grid>
+				<StackPanel Orientation="Horizontal" Margin="50" >
+					<Button Command="{TemplateBinding IconClickCommand}" CornerRadius="50"
+							Background="Green" Width="100" Height="100"></Button>				
+					<Grid Name="NewGrid" Background="Gray" VerticalAlignment="Center"
+							IsVisible="{TemplateBinding IsGridVisible}" 
+						  HorizontalAlignment="Center" Width="300" Height="200" Margin="50">
+						
+						<TextBlock Text="{TemplateBinding IsGridVisible}"></TextBlock>
+
+						<Button Command="{TemplateBinding OrientationIconClickCommand}" CornerRadius="30"
+								Background="Aquamarine" Width="25" Height="25"/>
+
+						<Slider Maximum="{Binding ElementName=MaxV, Path=Text }" Minimum="{Binding ElementName=MinV, Path=Text}"
+									Name="Slider" Width="250" Height="140" VerticalAlignment="Top" Margin="0,10,0,0"
+									HorizontalAlignment="Center" Orientation="{Binding ElementName=SliderOrientation, Path=Text}"/>
+						<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+							<TextBlock Width="55"  HorizontalAlignment="Center" Text="{Binding #Slider.Value}"/>
+							<StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Left">
+								<TextBox Name="MaxV"/>
+								<TextBox Name="MinV"/>
+								<TextBlock Name="SliderOrientation" Text="{TemplateBinding SliderOrientation}"/>
+							</StackPanel>
+						</StackPanel>
+					</Grid>
+				</StackPanel>
+
+			</Grid>
+		</ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>

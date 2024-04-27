@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:media="clr-namespace:Avalonia.Media;assembly=Avalonia"
+		xmlns:vm="using:MVVMLab9.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Avalonia.Xaml.Interactivity"
+		xmlns:ia="clr-namespace:Avalonia.Xaml.Interactions.Core;assembly=Avalonia.Xaml.Interactions"
+		xmlns:control="clr-namespace:MVVMLab9.Control"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="MVVMLab9.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MVVMLab9">
+	<Grid RowDefinitions="*,*">	
+			<control:CustomControl Grid.Row="0" HorizontalAlignment="Left"			
+			IconClickCommand="{Binding ButtonCommand}" IsGridVisible="{Binding IsGridVisible}"
+			SliderOrientation="{Binding SliderOrientation}" OrientationIconClickCommand="{Binding ButtonCommandOrientation}"/>
+
+	</Grid>
+</Window>
